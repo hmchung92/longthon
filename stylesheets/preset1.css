@@ -1,0 +1,584 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a:not(.btn) {
+  color: #074b6f;
+}
+a:not(.btn):hover {
+  color: #2d3192;
+}
+body {
+  color: #000;
+}
+body.bg {
+  background: #ffffff;
+}
+#sp-header-wrapper {
+  background-color: #ffffff;
+  background-image: -moz-linear-gradient(top,#ffffff,#ffffff);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#ffffff));
+  background-image: -webkit-linear-gradient(top,#ffffff,#ffffff);
+  background-image: -o-linear-gradient(top,#ffffff,#ffffff);
+  background-image: linear-gradient(to bottom,#ffffff,#ffffff);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffffffff', GradientType=0);
+}
+#sp-header-wrapper .logo {
+  background-image: url(../images/logo.png);
+}
+#sp-menu-wrapper {
+  background-color: #2d3192;
+background: -webkit-gradient(radial, center center, 0, center center, 460, from(#3d40c0), to(#2d3192));
+background: -webkit-radial-gradient(circle, #3d40c0, #2d3192);
+background: -moz-radial-gradient(circle, #3d40c0, #2d3192);
+background: -ms-radial-gradient(circle, #3d40c0, #2d3192);
+font-weight:bold; text-transform:uppercase;
+}
+#sp-menu-wrapper #sp-main-menu ul.level-0 > li a {
+  color: #fff;
+}
+#sp-menu-wrapper #sp-main-menu ul.level-0 > li li a {
+  color: #666666;
+}
+#sp-menu-wrapper #sp-main-menu ul.level-0 > li:hover,
+#sp-menu-wrapper #sp-main-menu ul.level-0 > li.active {
+  background: #2d2d2d;
+}
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group) a {
+  border-bottom: 1px solid #eee;
+}
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active {
+  background: #2d3192;
+}
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active a {
+  color: #fff;
+}
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li.sp-menu-group a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li.sp-menu-group a {
+  color: #666666;
+}
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group) a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group) a {
+  color: #666666;
+}
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group).active a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group).active a {
+  color: #fff;
+}
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group) a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group) a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group) a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group) a {
+  color: #666666;
+}
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group).active a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group).active a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group).active a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group).active a {
+  color: #fff;
+}
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group) a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group) a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group) a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group) a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group) a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group) a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group) a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group) a {
+  color: #666666;
+}
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group).active a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group).active a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group).active a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group).active a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group).active a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group).active a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group).active a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group).active a {
+  color: #fff;
+}
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group) a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group) a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group) a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group) a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group) a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group) a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group) a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group) a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group) a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group) a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group) a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group) a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group) a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group) a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group) a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group) a {
+  color: #666666;
+}
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group).active a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group).active a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group).active a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group).active a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group).active a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group).active a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group).active a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group).active a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group).active a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group).active a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group).active a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group).active a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover li:not(.sp-menu-group).active a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group).active li:not(.sp-menu-group).active a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group):hover li:not(.sp-menu-group).active a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group):hover a,
+#sp-menu-wrapper #sp-main-menu li li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group).active li:not(.sp-menu-group).active a {
+  color: #fff;
+}
+#sp-feature-wrapper {
+  background: #2d3192;
+  border-top: 1px solid #ffffff;
+}
+#sp-feature-wrapper #purches_main {
+  color: #fff;
+}
+#sp-feature-wrapper #purches_main h4 {
+  color: #fff;
+}
+#sp-scroll-wrapper .bt-cs a.prev {
+  background: url(../images/re-left.png) no-repeat scroll left center transparent !important;
+}
+#sp-scroll-wrapper .bt-cs a.prev:hover {
+  opacity: 0.9;
+}
+#sp-scroll-wrapper .bt-cs a.next {
+  background: url(../images/re-right.png) no-repeat scroll right center transparent !important;
+}
+#sp-scroll-wrapper .bt-cs a.next:hover {
+  opacity: 0.9;
+}
+#sp-scroll-wrapper .slides_container {
+  border-bottom: 1px solid #2d3192;
+  cursor: move;
+}
+#sp-scroll-wrapper .slides_container .bt-row a {
+  color: #000;
+}
+#sp-scroll-wrapper .slides_container .bt-row a:hover {
+  color: #2d3192;
+}
+#sp-scroll-wrapper .slides_container .bt-row .bt-inner img {
+  outline: none;
+  border-top: 4px solid #2d3192;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+#sp-middle-wrapper #sp-middle1 .nspArt img.nspImage {
+  border: 4px solid #fff;
+  outline: 1px solid #cccccc;
+}
+#sp-middle-wrapper #sp-middle2 .nspPrev {
+  background: url(../images/prev.png) no-repeat scroll left center transparent !important;
+}
+#sp-middle-wrapper #sp-middle2 .nspPrev:hover {
+  opacity: 0.5;
+}
+#sp-middle-wrapper #sp-middle2 .nspNext {
+  background: url(../images/next.png) no-repeat scroll left center transparent !important;
+}
+#sp-middle-wrapper #sp-middle2 .nspNext:hover {
+  opacity: 0.5;
+}
+#sp-middle-wrapper #sp-middle2 .module h3 .nspArts h4.nspHeader a {
+  color: #333333 !important;
+}
+#sp-middle-wrapper #sp-middle2 .module h3 .nspArts h4.nspHeader a:hover:not(.btn) {
+  color: #333333;
+}
+#sp-testimonial-wrapper #monialsfader #monials li .img {
+  -webkit-border-radius: 70px 70px 70px 70px;
+  border-radius: 70px 70px 70px 70px;
+  background: #2d3192;
+}
+#sp-testimonial-wrapper #monialsfader #monials li .img img {
+  -webkit-border-radius: 60px 60px 60px 60px;
+  border-radius: 60px 60px 60px 60px;
+}
+#sp-testimonial-wrapper #monialsfader #monials li .testi_text {
+  background: #2d3192;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+#sp-testimonial-wrapper #monialsfader #monials li .testimonials {
+  color: #fff;
+}
+#sp-testimonial-wrapper #monialsfader #monials li .testi_bg {
+  background: url(../images/testi_bg.png) no-repeat left center !important;
+}
+#sp-partner-wrapper #sp-partner .module h3 img a {
+  filter: grayscale;
+}
+#sp-twites-wrapper {
+  background: #2d3192;
+}
+#sp-twites-wrapper #sp-twites #wds-container {
+  background: url(../images/tweeter.png) no-repeat left center #2d3192 !important;
+  padding: 0 0 0 40px;
+  border: none !important;
+  font-size: 13px;
+  font-family: 'PT Sans';
+}
+#sp-twites-wrapper #sp-twites .twtr-doc .twtr-bd {
+  background: url(../images/tweeter.png) no-repeat left center #2d3192;
+  color: #fff;
+}
+#sp-twites-wrapper #sp-twites .twtr-doc .twtr-bd .twtr-timeline {
+  background: #2d3192 !important;
+  border-radius: 0 0 0 0;
+}
+.module.highlighted {
+  background: none;
+  color: #666666;
+}
+.module.highlighted a:not(.btn) {
+  color: #1ea8f1;
+}
+.module.highlighted a:not(.btn):hover {
+  color: #074b6f;
+}
+#sp-bottom-wrapper {
+  background: #4d4d4d;
+  color: #ffffff;
+  border-bottom: 1px solid #616161;
+}
+#sp-bottom-wrapper h3 {
+  color:#FFFFFF;
+  border-bottom: 1px solid #666666;
+}
+#sp-bottom-wrapper #sp-bottom1 .custom ul li a {
+  color: #b3b3b3;
+  -webkit-transition: all .5s linear;
+  -moz-transition: all .5s linear;
+  -ms-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+#sp-bottom-wrapper #sp-bottom1 .custom ul li a:hover {
+  color: #fff;
+}
+#sp-bottom-wrapper #sp-bottom2 .module a {
+  background: #2d3192;
+  color: #fff;
+  -webkit-transition: all .5s linear;
+  -moz-transition: all .5s linear;
+  -ms-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+#sp-bottom-wrapper #sp-bottom2 .module a:hover {
+  color: #000;
+  background: #fff;
+}
+#sp-bottom-wrapper a:not(.btn) {
+  color: #1ea8f1;
+}
+#sp-bottom-wrapper a:not(.btn):hover {
+  color: #7ecdf7;
+}
+#sp-bottom3 .module,
+#sp-bottom4 .module {
+  color:#fff;
+}
+#sp-footer-wrapper {
+  background: #343434;
+  color: #ffffff;
+  border-top: 1px solid #393939;
+}
+#sp-footer-wrapper h3 {
+  color: #ffffff;
+}
+#sp-footer-wrapper a:not(.btn) {
+  color: white;
+}
+#sp-footer-wrapper a:not(.btn):hover {
+  color: #7ecdf7;
+}
+.sp-border::after {
+  background: #4d4d4d;
+}
+.btn-primary,
+button,
+input[type='submit'],
+input[type='button'],
+submit {
+  background-color: #00a859;
+  background-image: -moz-linear-gradient(top,#00A859,#008c49);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#00A859),to(#008c49));
+  background-image: -webkit-linear-gradient(top,#00A859,#008c49);
+  background-image: -o-linear-gradient(top,#00A859,#008c49);
+  background-image: linear-gradient(to bottom,#00A859,#008c49);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00A859', endColorstr='#008c49', GradientType=0);
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+background-color: #00a859;
+ }
+#sp-toppannel-wrapper {
+  background: #f7f7f7;
+  border-top: 4px solid #2d3192;
+}
+#sp-toppannel-wrapper ul.nav li {
+  background: url(../images/seprator.jpg) no-repeat right center;
+}
+#sp-toppannel-wrapper ul.nav li:last-child {
+  background: none;
+}
+#sp-toppannel-wrapper ul.nav li a {
+  color: #666666;
+}
+#sp-toppannel-wrapper ul.nav li a:hover {
+  background: none;
+  color: #1a1a1a;
+}
+#sp-header-wrapper .search form input#mod-search-searchword {
+  border-right: none;
+  box-shadow: none;
+  border-color: #e0e0e0;
+  width: 120px;
+  color: #666666;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+#sp-header-wrapper .search form input#mod-search-searchword:focus {
+  width: 180px;
+}
+#sp-header-wrapper .search form input#mod-search-searchword:hover {
+  width: 180px;
+}
+#sp-header-wrapper .search form button.btn-primary {
+  background: none;
+  color: #2d3192;
+  border-left: none;
+  box-shadow: none;
+  border-color: #e0e0e0;
+}
+#sp-content-bottom2 {
+  background: #f3f3f3;
+}
+#sp-content-bottom2 .sp_quickcontact input#name,
+#sp-content-bottom2 .sp_quickcontact input#email,
+#sp-content-bottom2 .sp_quickcontact input#subject {
+  border-color: #e6e6e6;
+  background: #fff;
+}
+#sp-content-bottom2 .sp_quickcontact input#name:focus,
+#sp-content-bottom2 .sp_quickcontact input#email:focus,
+#sp-content-bottom2 .sp_quickcontact input#subject:focus {
+  border-color: #2d3192;
+}
+#sp-content-bottom2 .sp_quickcontact textarea {
+  border-color: #e6e6e6;
+  background: #fff;
+}
+#sp-content-bottom2 .sp_quickcontact textarea:focus {
+  border-color: #2d3192;
+}
+#sp-right .module img {
+  border: 2px solid #fff;
+  outline: 1px solid #6f6f6f;
+}
+.skill_bar .progress_key .percent_txt {
+  float: right;
+}
+.skill_bar .progress .progress_inner {
+  background: #9d261d;
+}
+.skill_bar .progress_key .percent_txt {
+  background: #666666;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  color: #fff;
+  valign: center;
+}
+.skill_bar .progress .progress_inner {
+  background-color: #34a8e5;
+  background-image: -moz-linear-gradient(top,#4ebbf4,#2d3192);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#4ebbf4),to(#2d3192));
+  background-image: -webkit-linear-gradient(top,#4ebbf4,#2d3192);
+  background-image: -o-linear-gradient(top,#4ebbf4,#2d3192);
+  background-image: linear-gradient(to bottom,#4ebbf4,#2d3192);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff4ebaf3', endColorstr='#ff0d8ccf', GradientType=0);
+}
+.sprocket-mosaic .sprocket-mosaic-header {
+  background: #f7f7f7;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+.sprocket-mosaic .sprocket-mosaic-header .sprocket-mosaic-filter ul li {
+  background: #2d3192;
+  color: #fff;
+}
+.sprocket-mosaic .sprocket-mosaic-header .sprocket-mosaic-filter ul li:hover {
+  background: #333333;
+  color: #fff;
+  border-radius: 0 !important;
+}
+.sprocket-mosaic .sprocket-mosaic-header .sprocket-mosaic-order ul li {
+  background: #333333;
+  color: #fff;
+}
+.sprocket-mosaic .sprocket-mosaic-header .sprocket-mosaic-order ul li:hover {
+  background: #2d3192;
+  color: #fff;
+  border-radius: 0 !important;
+}
+.sprocket-mosaic .sprocket-mosaic-container .sprocket-mosaic-item .sprocket-padding div.sprocket-mosaic-head {
+  background: #2d3192;
+}
+.tp-caption.small_text_blue {
+  color: #2d3192 !important;
+}
+.tp-caption.blue_button {
+  background: #2d3192 !important;
+}
+.tp-caption.big_blue {
+  background: #2d3192 !important;
+}
+.accordion-heading {
+  background: url(../images/arow.png) no-repeat scroll right center !important;
+}
+.accordion-heading:hover {
+  background: url(../images/str_arow.png) no-repeat scroll right center !important;
+}
+#sp-content-bottom1 .sprocket-mosaic .sprocket-mosaic-container .sprocket-mosaic-item {
+  border: none;
+  overflow: hidden;
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+}
+#sp-content-bottom1 .sprocket-mosaic .sprocket-mosaic-container .sprocket-mosaic-item:hover img {
+  transform: translateX(300px);
+}
+#sp-content-bottom1 .sprocket-mosaic .sprocket-mosaic-container .sprocket-mosaic-item img.sprocket-mosaic-image {
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  display: block;
+  position: relative;
+}
+#sp-content-bottom1 .sprocket-mosaic .sprocket-mosaic-container .sprocket-mosaic-item .sprocket-mosaic-hovercontent {
+  display: block;
+  font-size: 0px;
+}
+#sp-content-bottom1 .sprocket-mosaic .sprocket-mosaic-container .sprocket-mosaic-item:hover .sprocket-padding div.sprocket-mosaic-head {
+  left: 0 !important;
+}
+#sp-content-bottom1 .sprocket-mosaic .sprocket-mosaic-container .sprocket-mosaic-item .sprocket-padding {
+  border: 1px solid #cccccc;
+}
+#sp-content-bottom1 .sprocket-mosaic .sprocket-mosaic-container .sprocket-mosaic-item .sprocket-padding div.sprocket-mosaic-head {
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+}
+#sp-content-bottom1 .sprocket-mosaic .sprocket-mosaic-container .sprocket-mosaic-item .sprocket-padding div.sprocket-mosaic-head h2.sprocket-mosaic-title {
+  background: #0a6c9f !important;
+  color: #000;
+  box-shadow: 0 1px 3px rgba(159,141,140,0.5);
+}
+#sp-content-bottom1 .sprocket-mosaic .sprocket-mosaic-container .sprocket-mosaic-item .sprocket-padding div.sprocket-mosaic-head h2.sprocket-mosaic-title a {
+  color: #fff;
+}
+#sp-content-bottom1 .sprocket-mosaic .sprocket-mosaic-container .sprocket-mosaic-item .sprocket-padding div.sprocket-mosaic-head h2.sprocket-mosaic-title a:hover {
+  color: #fff;
+}
+#sp-content-bottom1 .sprocket-mosaic .sprocket-mosaic-container .sprocket-mosaic-item .sprocket-padding a.sprocket-readmore {
+  color: #fff;
+}
+#sp-content-bottom1 .sprocket-mosaic .sprocket-mosaic-container .sprocket-mosaic-item .sprocket-padding div.sprocket-mosaic-text {
+  color: #000;
+}
+#sp-content-bottom1 .sprocket-mosaic .sprocket-mosaic-container .sprocket-mosaic-item .sprocket-padding ul.sprocket-mosaic-tags li {
+  background: none;
+  color: #fff;
+}
+#sp-content-bottom1 .sprocket-mosaic .sprocket-mosaic-loadmore {
+  background: #2d3192;
+  color: #fff;
+}
+#sp-content-bottom1 .sprocket-mosaic .sprocket-mosaic-loadmore:hover {
+  background: #000;
+  color: #fff;
+}
